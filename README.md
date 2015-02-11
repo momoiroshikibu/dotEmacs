@@ -3,42 +3,37 @@
 # Requirements
 - Mac OS X
 
-  It may work on Linux.
+    It may work on Linux.
 
 - Emacs
 
-  (>= 24.4)
+    (>= 24.4)
 
 - Cask
 
-  `$ brew install cask`
-  
+        $ brew install cask
+
 ## Getting Started
 
-0. Clone repository
-```shell
-$ cd ~/.emacs.d
-$ git clone https://github.com/momoiroshikibu/dotEmacs.git
-```
+1. Clone repository
 
-0. Install dependent packages
-```shell
-$ cask install
-```
+        $ cd ~/.emacs.d
+        $ git clone https://github.com/momoiroshikibu/dotEmacs.git
 
-0. Make directories for backups
-```shell
-$ mkdir ~/.emacs.d/.auto-save-list
-$ mkdir ~/.emacs.d/.backups
-```
+2. Install dependent packages
 
-0. Make directories for caches
-```shell
-$ mkdir -p ~/.emacs.d/.cache/recentf
-$ mkdir -p ~/.emacs.d/.cache/savehist
-```
+        $ cask install
 
-0. Make directory for ~~junk~~ treasure files
-```shell
-$ mkdir ~/Documents/stashes
-```
+3. Make directories for backups
+
+        $ mkdir ~/.emacs.d/.auto-save-list
+        $ mkdir ~/.emacs.d/.backups
+
+4. Make directories for caches
+
+        $ mkdir -p ~/.emacs.d/.cache/recentf
+        $ mkdir -p ~/.emacs.d/.cache/savehist
+
+5. Make directory for ~~junk~~ treasure files
+
+        $ mkdir ~/Documents/stashes
