@@ -90,3 +90,11 @@
 ;; Git
 (depends-on "git-gutter+")
 
+
+;; Markdown
+(depends-on "markdown-mode")
+
+
+;; writegood-mode
+(depends-on "writegood-mode")
+
