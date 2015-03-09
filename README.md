@@ -17,12 +17,11 @@
 
 1. Clone repository
 
-        $ cd ~/.emacs.d
-        $ git clone https://github.com/momoiroshikibu/dotEmacs.git
+        $ git clone https://github.com/momoiroshikibu/dotEmacs.git ~/.emacs.d
 
 2. Install dependent packages
 
-        $ cask install
+        $ cd ~/.emacs.d cask install
 
 3. Make directories for backups
 
