@@ -33,4 +33,4 @@
 ; (color-theme-momoiro)
 
 ; (require 'request)
-; (put 'dired-find-alternate-file 'disabled nil)
+(put 'dired-find-alternate-file 'disabled nil)

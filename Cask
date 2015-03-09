@@ -1,5 +1,6 @@
 (source gnu)
 (source melpa)
+(source marmalade)
 
 
 ;;; Bootstrap
@@ -90,3 +91,5 @@
 ;; Git
 (depends-on "git-gutter+")
 
+;; TypeScript
+(depends-on "typescript")
