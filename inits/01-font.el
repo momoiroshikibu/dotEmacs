@@ -1,6 +1,7 @@
 ;;; Font Settings
 ;   Ricty Diminished Discord
 (let ((font-face "Ricty Diminished Discord")
+;;       (font-face "Hack")
       (charset   "iso10646-1"))
   (set-face-attribute 'default nil
                       :family font-face

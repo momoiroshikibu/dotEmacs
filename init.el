@@ -29,8 +29,8 @@
 (when (require 'init-loader)
   (init-loader-load))
 
-;; color-theme
-; (color-theme-momoiro)
 
 ; (require 'request)
 ; (put 'dired-find-alternate-file 'disabled nil)
+(put 'upcase-region 'disabled nil)
+(put 'downcase-region 'disabled nil)

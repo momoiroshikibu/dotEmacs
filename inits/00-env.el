@@ -159,3 +159,9 @@
 (defadvice linum-schedule (around my-linum-schedule () activate)
   (run-with-idle-timer 0.2 nil #'linum-update-current))
 
+
+;; scroll
+(setq scroll-conservatively 1)
+(setq scroll-margin 5)
+(setq next-screen-context-lines 5)
+(setq scroll-preserve-screen-position t)

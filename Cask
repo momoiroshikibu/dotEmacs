@@ -1,6 +1,6 @@
 (source gnu)
 (source melpa)
-
+(source marmalade)
 
 ;;; Bootstrap
 (depends-on "bind-key")
@@ -27,6 +27,7 @@
 (depends-on "use-package")
 (depends-on "web-mode")
 (depends-on "yasnippet")
+(depends-on "browse-kill-ring")
 
 ;;; My dependencies
 ;; init-loader
@@ -61,11 +62,15 @@
 
 ;; JavaScript
 (depends-on "js3-mode")
+(depends-on "js2-mode")
 (depends-on "js-doc")
 (depends-on "json-mode")
 (depends-on "tern-auto-complete")
+(depends-on "web-beautify")
+(depends-on "slime-js" :git "https://github.com/Gozala/slime-js.git")
 
-;; CoffeeScript
+
+;; Coffeescript
 (depends-on "coffee-mode")
 (depends-on "flymake-coffee")
 
@@ -94,7 +99,18 @@
 ;; Markdown
 (depends-on "markdown-mode")
 
-
 ;; writegood-mode
 (depends-on "writegood-mode")
+
+;; dockerfile-mode
+(depends-on "dockerfile-mode")
+
+;; Lisp
+;; (depends-on "lispxmp")
+(depends-on "rainbow-delimiters")
+
+
+;; Cucumber
+(depends-on "feature-mode")
+
 

@@ -13,3 +13,8 @@
     (if file-name
         (find-alternate-file (concat "/sudo::" file-name))
       (error "Cannot get a file name"))))
+
+
+(defun browse-google()
+  (interactive)
+  (browse-url "https://google.com"))
