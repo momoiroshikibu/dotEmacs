@@ -95,12 +95,12 @@
 ;; Git
 (depends-on "git-gutter+")
 
-
 ;; Markdown
 (depends-on "markdown-mode")
 
 ;; writegood-mode
 (depends-on "writegood-mode")
+
 
 ;; dockerfile-mode
 (depends-on "dockerfile-mode")
@@ -112,5 +112,3 @@
 
 ;; Cucumber
 (depends-on "feature-mode")
-
-
