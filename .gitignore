@@ -6,3 +6,9 @@
 .cask
 *.elc
 url
+ac-comphist.dat
+bookmarks
+el-get/
+elpa/
+eshell/
+helm-adaptive-history
