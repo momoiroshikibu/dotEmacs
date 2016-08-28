@@ -22,12 +22,6 @@
 ;; (setf slime-default-lisp 'roswell)
 
 
-
-
-
-
-
-
 (require 'ac-slime)
 (add-hook 'slime-mode-hook 'set-up-slime-ac)
 (add-hook 'slime-repl-mode-hook 'set-up-slime-ac)
@@ -39,27 +33,3 @@
 (modify-syntax-entry ?\] ")[" lisp-mode-syntax-table)
 (modify-syntax-entry ?\{ "(}" lisp-mode-syntax-table)
 (modify-syntax-entry ?\} "){" lisp-mode-syntax-table)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-;; (require 'ac-slime)
-;; (add-hook 'slime-mode-hook 'set-up-slime-ac)
-;; (add-hook 'slime-repl-mode-hook 'set-up-slime-ac)
-;; (add-hook 'comint-mode-hook
-;;           (lambda ()
-;;             (slime-mode t)
-;;             (auto-complete-mode t)
-;;             ))
-
-
