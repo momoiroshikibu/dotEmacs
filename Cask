@@ -88,8 +88,9 @@
 ;; YAML
 (depends-on "yaml-mode")
 
-;; Clojure
+;; Lisp
 (depends-on "slime")
+(depends-on "swank")
 (depends-on "ac-slime")
 
 ;; Git
