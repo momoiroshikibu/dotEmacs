@@ -2,6 +2,10 @@
 ;; http://www.emacswiki.org/emacs/CommunityEmacsFAQ#toc3
 (setq inhibit-startup-message t)
 
+;; tools - off
+(menu-bar-mode -1)
+(tool-bar-mode -1)
+(scroll-bar-mode t)
 
 ;; Frame Title Format
 ;; http://www.emacswiki.org/emacs/FrameTitle
@@ -29,11 +33,16 @@
   (setq-default save-place t)
   (setq save-place-file "~/.emacs.d/.cache/saved-places"))
 
+;; cursor position
+(column-number-mode t)
+
+;; cursor
+(set-default 'cursor-type 'bar)
+
 
 ;; Drag And Drop
 ;; http://www.emacswiki.org/emacs/DragAndDrop
 (define-key global-map [ns-drag-file] 'ns-find-file)
-;; (setq ns-pop-up-frames nil)
 
 
 ;; Mini Buffer
@@ -51,6 +60,10 @@
 ;; Show Paren Mode
 ;; http://emacswiki.org/emacs/ShowParenMode
 (setq show-paren-style 'mixed)
+
+;; show-paren
+(show-paren-mode t)
+
 
 ;; Electric Pair
 (when (>= emacs-major-version 24)
@@ -85,3 +98,20 @@
 (setq scroll-preserve-screen-position t)
 
 
+;; highlights
+(setq-default show-trailing-whitespace t) ; trailing spaces
+(global-font-lock-mode t)                 ; keywords
+(global-hl-line-mode t)                   ; current line
+
+
+;; show tab
+;; »   some
+;; »   »   thing
+(standard-display-ascii ?\t "»       ")
+
+
+;; indent
+(setq c-tab-always-indent t)
+(setq-default indent-tabs-mode nil)
+(setq tab-width 8)
+(setq indent-line-function 'indent-relative-maybe)

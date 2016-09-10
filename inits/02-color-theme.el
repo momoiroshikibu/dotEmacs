@@ -16,8 +16,7 @@
  '(minibuffer-prompt ((t (:foreground "#76daff" :background "#1B1D1E"))))
 
  ;; 空白
- ;;     (setq-default show-trailing-whitespace t)
- ;;     (trailing-whitespace ((t (:background "#505050" :foreground "#303030" :underline t))))
+ '(trailing-whitespace ((t (:background "#505050" :foreground "#303030" :underline t))))
 
  ;; モードライン
  '(mode-line ((t (:foreground "#FB70A2" :background "#2c131c"
