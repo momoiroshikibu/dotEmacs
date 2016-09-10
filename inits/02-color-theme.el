@@ -4,8 +4,6 @@
  'matsuura
  ;; 背景・文字・カーソル
  '(cursor ((t (:background "#F92672"))))
- ;;  '(default ((t (:background "#1a1a15" :foreground "#d7d7d3"))))
-
 
  '(default ((t (:background "#122027" :foreground "#f2f1f1"))))
 
@@ -90,7 +88,17 @@
 
 
  ;; MMM-mode
- '(mmm-default-submode-face ((t (:foreground nil :background "#000000")))))
+ '(mmm-default-submode-face ((t (:foreground nil :background "#000000"))))
+
+
+ ;; company mode
+ '(company-tooltip ((t (:foreground "#122027" :background "#f2f1f1"))))
+ '(company-tooltip-common ((t (:foreground "#122027" :background "#f2f1f1"))))
+ '(company-tooltip-common-selection ((t (:foreground "#ffffff" :background "steelblue"))))
+ '(company-tooltip-selection ((t (:foreground "#f2f1f1" :background "steelblue"))))
+ '(company-tooltip-preview-common ((t (:foreground "#f2f1f1"))))
+ '(company-scrollbar-fg ((t (:background "#a9a8a8"))))
+ '(company-scrollbar-bg ((t (:background "#f2f1f1")))))
 
 
 (when load-file-name

@@ -1,3 +1,6 @@
+;; Cask
+;; if you are behind a proxy server, edit cask-cli to use proxy for download.
+
 (source gnu)
 (source melpa)
 (source marmalade)
@@ -47,7 +50,8 @@
 (depends-on "open-junk-file")
 
 ;; Completion
-(depends-on "auto-complete")
+(depends-on "company")
+(depends-on "company-quickhelp")
 
 ;; Appearances
 (depends-on "tabbar")
@@ -67,7 +71,7 @@
 (depends-on "json-mode")
 (depends-on "tern-auto-complete")
 (depends-on "web-beautify")
-(depends-on "slime-js" :git "https://github.com/Gozala/slime-js.git")
+;; (depends-on "slime-js" :git "https://github.com/Gozala/slime-js.git")
 
 
 ;; Coffeescript
