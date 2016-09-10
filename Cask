@@ -59,15 +59,18 @@
 (depends-on "color-moccur")
 (depends-on "color-theme")
 
+;; moccur
+(depends-on "moccur-edit")
+
 ;; helm
 (depends-on "helm")
 (depends-on "ac-helm")
 (depends-on "helm-git-grep")
+(depends-on "helm-occur")
 
 ;; JavaScript
 (depends-on "js3-mode")
 (depends-on "js2-mode")
-(depends-on "js-doc")
 (depends-on "json-mode")
 (depends-on "tern-auto-complete")
 (depends-on "web-beautify")

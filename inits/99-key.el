@@ -49,10 +49,13 @@
 
 
 ;; helm keys
+(global-set-key (kbd "M-x") #'helm-M-x)
 (global-set-key (kbd "C-c h") 'helm-mini)
 (global-set-key (kbd "C-x C-r") 'helm-for-files)
 (global-set-key (kbd "C-; k l") 'helm-show-kill-ring)
 (global-set-key (kbd "C-x b") 'helm-buffers-list)
+
+
 
 ;; ;; For find-file etc.
 ;; (define-key helm-read-file-map (kbd "TAB") 'helm-execute-persistent-action)
@@ -61,7 +64,6 @@
 
 
 
-(helm-mode 1)
 (setq helm-input-idle-delay 0.02)
 
 ;;; In Buffer File Completion
