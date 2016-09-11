@@ -17,9 +17,3 @@
   (when (require 'company-tern)
     (add-to-list 'company-backends 'company-tern)))
 
-(when (require 'web-mode))
-
-
-(defun json:format-jq (beg end)
-  (interactive "r")
-  (shell-command-on-region beg end "jq ." nil t))
