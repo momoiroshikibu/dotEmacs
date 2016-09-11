@@ -37,10 +37,6 @@
 (define-key global-map (kbd "C-+") 'undo-tree-redo)
 
 
-;; auto-complete
-(define-key ac-complete-mode-map "\C-n" 'ac-next)
-(define-key ac-complete-mode-map "\C-p" 'ac-previous)
-
 ;; yasnippet
 (custom-set-variables '(yas-trigger-key "M-/"))
 ;; 既存スニペットを挿入
