@@ -59,6 +59,11 @@
     (eval-after-load 'helm
       '(define-key helm-map (kbd "C-; g") 'helm-git-grep-from-helm)))
 
+
+  ;; helm-ls-git
+  (when (require 'helm-ls-git))
+
+
   ;; helm-do-grep-recursive
   ;; http://www.reddit.com/r/emacs/comments/2dxj69/how_do_make_helmdogrep_to_do_recursive_always/
   (defun helm-do-grep-recursive (&optional non-recursive)

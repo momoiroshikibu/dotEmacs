@@ -50,6 +50,7 @@
 (global-set-key (kbd "C-x C-r") 'helm-for-files)
 (global-set-key (kbd "C-; k l") 'helm-show-kill-ring)
 (global-set-key (kbd "C-x b") 'helm-buffers-list)
+(global-set-key (kbd "C-; g") 'helm-ls-git-ls)
 
 
 

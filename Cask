@@ -67,6 +67,7 @@
 (depends-on "ac-helm")
 (depends-on "helm-git-grep")
 (depends-on "helm-occur")
+(depends-on "helm-ls-git")
 
 ;; JavaScript
 (depends-on "js2-mode")
