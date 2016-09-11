@@ -3,6 +3,13 @@
 ;; slime
 (require 'slime)
 
+;; slime-company
+; (add-hook 'slime-load-hook (lambda () (require 'slime-company)))
+
+(require 'slime-company)
+(slime-setup '(slime-company))
+
+
 (add-hook 'lisp-mode-hook
           (lambda ()
             (slime-mode t)
@@ -22,12 +29,7 @@
 ;; (setf slime-default-lisp 'roswell)
 
 
-(require 'ac-slime)
-(add-hook 'slime-mode-hook 'set-up-slime-ac)
-(add-hook 'slime-repl-mode-hook 'set-up-slime-ac)
 
-(add-to-list 'ac-modes 'slime-repl-mode)
-(add-to-list 'ac-modes 'lisp-mode)
 
 (modify-syntax-entry ?\[ "(]" lisp-mode-syntax-table)
 (modify-syntax-entry ?\] ")[" lisp-mode-syntax-table)
