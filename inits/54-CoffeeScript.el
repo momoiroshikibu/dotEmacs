@@ -20,12 +20,12 @@
   (when (require 'flymake-coffee)
     (add-hook 'coffee-mode-hook 'flymake-coffee-load))
 
-  (autoload 'tern-mode "tern.el" nil t)
-  (add-hook 'coffee-mode-hook 'tern-mode)
-  (add-hook 'coffee-mode-hook 'auto-complete-mode)
-  (eval-after-load 'tern
-    '(progn
-       (require 'tern-auto-complete)
-       (tern-ac-setup)))
+;;   (autoload 'tern-mode "tern.el" nil t)
+;;   (add-hook 'coffee-mode-hook 'tern-mode)
+;;   (add-hook 'coffee-mode-hook 'auto-complete-mode)
+;;   (eval-after-load 'tern
+;;     '(progn
+;;        (require 'tern-auto-complete)
+;;        (tern-ac-setup)))
 )
 
