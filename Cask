@@ -70,7 +70,6 @@
 
 ;; JavaScript
 (depends-on "js2-mode")
-(depends-on "json-mode")
 (depends-on "company-tern")
 (depends-on "web-beautify")
 ;; (depends-on "slime-js" :git "https://github.com/Gozala/slime-js.git")
@@ -97,7 +96,7 @@
 ;; Lisp
 (depends-on "slime")
 (depends-on "swank")
-(depends-on "ac-slime")
+(depends-on "slime-company")
 
 ;; Git
 (depends-on "git-gutter+")
