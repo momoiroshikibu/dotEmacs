@@ -93,8 +93,8 @@
 
 ;; scroll
 (setq scroll-conservatively 1)
-(setq scroll-margin 5)
-(setq next-screen-context-lines 5)
+(setq scroll-margin 1)
+(setq next-screen-context-lines 1)
 (setq scroll-preserve-screen-position t)
 
 
