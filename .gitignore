@@ -4,6 +4,7 @@
 .backups
 .cache
 .cask
+.mc-lists.el
 *.elc
 url
 ac-comphist.dat
