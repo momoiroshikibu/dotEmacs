@@ -108,7 +108,6 @@
 ;; writegood-mode
 (depends-on "writegood-mode")
 
-
 ;; dockerfile-mode
 (depends-on "dockerfile-mode")
 
@@ -116,6 +115,8 @@
 ;; (depends-on "lispxmp")
 (depends-on "rainbow-delimiters")
 
-
 ;; Cucumber
 (depends-on "feature-mode")
+
+;; Varnish
+(depends-on "vcl-mode")
