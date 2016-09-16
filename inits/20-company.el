@@ -24,6 +24,7 @@
 
 
   (global-set-key (kbd "C-M-i") 'company-complete)
+  (global-set-key (kbd "C-S-i") 'company-complete)
 
   ;; C-n, C-pで補完候補を次/前の候補を選択
   (define-key company-active-map (kbd "C-n") 'company-select-next)
