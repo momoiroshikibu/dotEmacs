@@ -13,3 +13,4 @@ el-get/
 elpa/
 eshell/
 helm-adaptive-history
+tramp
