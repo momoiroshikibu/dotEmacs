@@ -73,7 +73,8 @@
 (depends-on "js2-mode")
 (depends-on "company-tern")
 (depends-on "web-beautify")
-;; (depends-on "slime-js" :git "https://github.com/Gozala/slime-js.git")
+(depends-on "slime-js")
+
 
 
 ;; Coffeescript
