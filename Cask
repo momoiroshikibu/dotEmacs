@@ -73,7 +73,6 @@
 (depends-on "js2-mode")
 (depends-on "company-tern")
 (depends-on "web-beautify")
-(depends-on "slime-js")
 
 
 

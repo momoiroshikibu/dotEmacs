@@ -3,16 +3,12 @@
   (add-hook 'emacs-lisp-mode-hook 'rainbow-delimiters-mode))
 
 
-(load (expand-file-name "~/.roswell/lisp/quicklisp/slime-helper.el"))
-;; Replace "sbcl" with the path to your implementation
-(setq inferior-lisp-program "sbcl")
 
 
-
-
-
-
-
-
-
+(load-library "cl-indent") ; defines the common-lisp-indent-function properties
+(cl-loop for symbol being the symbols
+         for cl-indent-rule = (get symbol 'common-lisp-indent-function)
+         for elisp-equivalent = (intern-soft (concat "cl-" (symbol-name symbol)))
+         when (and cl-indent-rule elisp-equivalent (fboundp elisp-equivalent))
+         do (put elisp-equivalent 'common-lisp-indent-function cl-indent-rule))
 
