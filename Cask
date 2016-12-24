@@ -120,3 +120,6 @@
 
 ;; Varnish
 (depends-on "vcl-mode")
+
+;; Go
+(depends-on "go-mode")
