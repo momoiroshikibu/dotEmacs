@@ -1,0 +1,1 @@
+(when (require 'stylus-mode))

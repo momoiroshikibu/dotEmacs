@@ -75,6 +75,8 @@
 (depends-on "web-beautify")
 
 
+;; Stylus
+(depends-on "stylus-mode")
 
 ;; Coffeescript
 (depends-on "coffee-mode")
