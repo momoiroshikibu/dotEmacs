@@ -66,7 +66,7 @@
 (depends-on "helm")
 (depends-on "ac-helm")
 (depends-on "helm-git-grep")
-(depends-on "helm-occur")
+; (depends-on "helm-occur")
 (depends-on "helm-ls-git")
 
 ;; JavaScript
@@ -98,7 +98,7 @@
 
 ;; Lisp
 (depends-on "slime")
-(depends-on "swank")
+; (depends-on "swank")
 (depends-on "slime-company")
 
 ;; Git
