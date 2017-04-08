@@ -69,6 +69,11 @@
 ; (depends-on "helm-occur")
 (depends-on "helm-ls-git")
 
+
+;; migemo
+(depends-on "migemo")
+(depends-on "helm-migemo")
+
 ;; JavaScript
 (depends-on "js2-mode")
 (depends-on "company-tern")
