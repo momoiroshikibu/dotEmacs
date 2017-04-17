@@ -61,3 +61,8 @@
                    helm-source-recentf
                    helm-source-buffer-not-found
                    helm-quickrun-source)))
+
+
+;; prevent form inserting magic comment
+;; # -*- coding: utf-8 -*-
+(setq ruby-insert-encoding-magic-comment nil)
