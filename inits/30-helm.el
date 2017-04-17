@@ -1,12 +1,9 @@
 ;;; helm
 (when (require 'helm-config)
 
-
   (helm-mode 1)
   (setq helm-input-idle-delay 0.02)
 
-
-  (helm-migemo-mode t)
 
   ;; In Buffer File Completion
   (setq enable-recursive-minibuffers t)

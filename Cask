@@ -31,6 +31,7 @@
 (depends-on "web-mode")
 (depends-on "yasnippet")
 (depends-on "browse-kill-ring")
+(depends-on "popwin")
 
 ;;; My dependencies
 ;; init-loader
@@ -48,6 +49,9 @@
 
 ;; Files
 (depends-on "open-junk-file")
+
+;; wgrep
+(depends-on "wgrep")
 
 ;; Completion
 (depends-on "company")
@@ -69,10 +73,6 @@
 ; (depends-on "helm-occur")
 (depends-on "helm-ls-git")
 
-
-;; migemo
-(depends-on "migemo")
-(depends-on "helm-migemo")
 
 ;; JavaScript
 (depends-on "js2-mode")
