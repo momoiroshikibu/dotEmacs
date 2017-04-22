@@ -15,7 +15,7 @@
 ;; quickrun
 (require 'quickrun)
 (define-key ruby-mode-map (kbd "C-c C-r") 'quickrun)
-(define-key ruby-mode-map (kbd "C-; r") 'helm-quickrun)
+
 
 (add-hook 'ruby-mode-hook '(lambda ()
                              (abbrev-mode 1)
@@ -24,11 +24,6 @@
                              (electric-layout-mode t)
                              (flycheck-mode)
                              (robe-mode)))
-
-(custom-set-variables '(helm-mini-default-sources '(helm-source-buffers-list
-                                                    helm-source-recentf
-                                                    helm-source-buffer-not-found
-                                                    helm-quickrun-source)))
 
 
 ;; indent

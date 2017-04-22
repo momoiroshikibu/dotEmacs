@@ -42,6 +42,12 @@
 ;; 既存スニペットを挿入
 ;; (define-key yas-minor-mode-map (kbd "C-x y i") 'yas-insert-snippet)
 
+;; helm mini
+(custom-set-variables '(helm-mini-default-sources '(helm-source-buffers-list
+                                                    helm-source-recentf
+                                                    helm-source-buffer-not-found
+                                                    helm-quickrun-source)))
+
 
 
 ;; helm keys
@@ -51,7 +57,7 @@
 (global-set-key (kbd "C-; k l") 'helm-show-kill-ring)
 (global-set-key (kbd "C-x b") 'helm-buffers-list)
 (global-set-key (kbd "C-; g") 'helm-git-grep)
-
+(global-set-key (kbd "C-; r") 'helm-quickrun)
 
 ;; ;; For find-file etc.
 ;; (define-key helm-read-file-map (kbd "TAB") 'helm-execute-persistent-action)
