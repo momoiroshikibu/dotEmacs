@@ -95,6 +95,8 @@
 (depends-on "ruby-end")
 (depends-on "ruby-electric")
 (depends-on "ruby-block")
+(depends-on "inf-ruby")
+(depends-on "rspec-mode")
 (depends-on "smart-compile")
 (depends-on "quickrun")
 
