@@ -115,3 +115,13 @@
 (setq-default indent-tabs-mode nil)
 (setq tab-width 8)
 (setq indent-line-function 'indent-relative-maybe)
+
+
+;; frame opacity
+(defun set-frame-opacity (opacity)
+  "Sets the opacity of the frame window."
+  (interactive "nopacity: ")
+  (let ((alpha (if (> opacity 100) 100
+                 (if (< opacity 0) 0 opacity))))
+    (set-frame-parameter (selected-frame) 'alpha alpha)
+    (message (format "current opacity: %s" alpha))))
