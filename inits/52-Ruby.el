@@ -17,13 +17,7 @@
 (define-key ruby-mode-map (kbd "C-c C-r") 'quickrun)
 
 
-(add-hook 'ruby-mode-hook '(lambda ()
-                             (abbrev-mode 1)
-                             (electric-pair-mode t)
-                             (electric-indent-mode t)
-                             (electric-layout-mode t)
-                             (flycheck-mode)
-                             (robe-mode)))
+
 
 
 ;; indent
@@ -52,3 +46,14 @@
 
 (require 'inf-ruby)
 (setq inf-ruby-default-implementation "pry")
+
+;; robe
+(require 'robe)
+
+(add-hook 'ruby-mode-hook '(lambda ()
+                             (abbrev-mode 1)
+                             (electric-pair-mode t)
+                             (electric-indent-mode t)
+                             (electric-layout-mode t)
+                             (flycheck-mode)
+                             (robe-mode)))

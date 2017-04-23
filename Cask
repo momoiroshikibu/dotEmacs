@@ -99,6 +99,7 @@
 (depends-on "rspec-mode")
 (depends-on "smart-compile")
 (depends-on "quickrun")
+(depends-on "robe")
 
 ;; YAML
 (depends-on "yaml-mode")

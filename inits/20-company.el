@@ -39,7 +39,11 @@
   (define-key company-active-map (kbd "C-i") 'company-complete-selection)
 
   ;; 各種メジャーモードでも C-M-iで company-modeの補完を使う
-  (define-key emacs-lisp-mode-map (kbd "C-M-i") 'company-complete))
+  (define-key emacs-lisp-mode-map (kbd "C-M-i") 'company-complete)
+
+  ;; robe-mode
+  (eval-after-load 'company
+    '(push 'company-robe company-backends)))
 
 (when (require 'company-quickhelp)
   (company-quickhelp-mode 1))
