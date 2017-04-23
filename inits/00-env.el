@@ -36,9 +36,9 @@
 
 ;; Emacs As Daemon
 ;; http://www.emacswiki.org/emacs/EmacsAsDaemon
-(when (require 'server)
-  (unless (server-running-p)
-    (server-start)))
+(require 'server)
+(unless (server-running-p)
+  (server-start))
 
 
 ;; Messages Buffer
@@ -65,5 +65,5 @@
 
 ;; exec-path-from-shell
 ;; https://github.com/purcell/exec-path-from-shell
-(when (require 'exec-path-from-shell)
-  (exec-path-from-shell-initialize))
+(require 'exec-path-from-shell)
+(exec-path-from-shell-initialize)

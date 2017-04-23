@@ -1,1 +1,1 @@
-(when (require 'stylus-mode))
+(require 'stylus-mode)

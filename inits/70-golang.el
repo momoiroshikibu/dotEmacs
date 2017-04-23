@@ -1,1 +1,1 @@
-(when (require 'go-mode))
+(require 'go-mode)

@@ -13,6 +13,6 @@
 (add-to-list 'exec-path (expand-file-name "~/homebrew/bin"))
 
 ;; init-loader
-(when (require 'init-loader)
-  (setq init-loader-show-log-after-init nil)
-  (init-loader-load))
+(require 'init-loader)
+(setq init-loader-show-log-after-init nil)
+(init-loader-load)

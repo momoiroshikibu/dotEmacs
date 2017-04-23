@@ -1,2 +1,2 @@
 ;; sql-indent
-(when (require 'sql-indent))
+(require 'sql-indent)
