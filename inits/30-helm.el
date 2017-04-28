@@ -4,7 +4,6 @@
 (helm-mode 1)
 (setq helm-input-idle-delay 0.02)
 
-
 ;; In Buffer File Completion
 (setq enable-recursive-minibuffers t)
 
@@ -47,17 +46,13 @@
 ;; 自動補完を無効
 (custom-set-variables '(helm-ff-auto-update-initial-value nil))
 
-;; helm-git-grep
-(require 'helm-git-grep) ;; Not necessary if installed by package.el
+
+(require 'helm-git-grep)
 (global-set-key (kbd "C-; g") 'helm-git-grep)
-;; Invoke `helm-git-grep' from isearch.
 (define-key isearch-mode-map (kbd "C-; g") 'helm-git-grep-from-isearch)
-;; Invoke `helm-git-grep' from other helm.
-(eval-after-load 'helm
-  '(define-key helm-map (kbd "C-; g") 'helm-git-grep-from-helm))
+(eval-after-load 'helm '(define-key helm-map (kbd "C-; g") 'helm-git-grep-from-helm))
 
 
-;; helm-ls-git
 (require 'helm-ls-git)
 
 
