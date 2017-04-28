@@ -1,4 +1,3 @@
-;; CoffeeScript
 (require 'coffee-mode)
 
 (defun coffee-custom ()
@@ -10,15 +9,9 @@
   ;; only show bad whitespace
   (setq whitespace-style '(trailing space-before-tab indentation empty space-after-tab)))
 
-(add-hook 'coffee-mode-hook
-          '(lambda() (coffee-custom)))
-
-(add-hook 'coffee-mode-hook
-          '(lambda() (tern-mode t)))
-
-(eval-after-load "coffee-mode"
-  '(progn
-     (define-key coffee-mode-map (kbd "C-j") 'coffee-newline-and-indent)))
+(add-hook 'coffee-mode-hook '(lambda() (coffee-custom)))
+(add-hook 'coffee-mode-hook '(lambda() (tern-mode t)))
+(eval-after-load "coffee-mode" '(progn (define-key coffee-mode-map (kbd "C-j") 'coffee-newline-and-indent)))
 
 
 (require 'flymake-coffee)

@@ -1,5 +1,3 @@
-;; http://d.hatena.ne.jp/CortYuming/20130225/p1
-
 (require 'slime)
 (load (expand-file-name "~/.roswell/lisp/quicklisp/slime-helper.el"))
 (setq inferior-lisp-program "ros -L sbcl -Q run")
@@ -10,9 +8,9 @@
 (slime-setup '(slime-fancy slime-company))
 
 
-(add-hook 'lisp-mode-hook(lambda ()
-                           (slime-mode t)
-                           (define-key lisp-mode-map (kbd "C-c C-s") 'slime)))
+(add-hook 'lisp-mode-hook (lambda ()
+                            (slime-mode t)
+                            (define-key lisp-mode-map (kbd "C-c C-s") 'slime)))
 
 
 ;; (setf slime-lisp-implementations
