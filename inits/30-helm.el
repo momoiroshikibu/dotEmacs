@@ -31,16 +31,14 @@
 ;;  ・M-n     ：カーソル位置の単語を検索パターンに追加
 ;;  ・C-z     ：チラ見
 ;;  ・C-c C-f ：helm-follow-mode の ON/OFF
-;;(global-set-key (kbd "C-x C-b") 'helm-for-files)
-;;(global-set-key (kbd "C-x C-;") 'helm-for-files)
-(define-key helm-command-map (kbd "C-;") 'helm-resume)
-(define-key helm-command-map (kbd "y")   'helm-show-kill-ring)
-(define-key helm-command-map (kbd "o")   'helm-occur)
-(define-key helm-command-map (kbd "i")   'helm-imenu)
-(define-key helm-command-map (kbd "n e t")   'helm-net)
-(define-key helm-command-map (kbd "C-s") 'helm-occur-from-isearch)
-;; (define-key helm-command-map (kbd "g")   'helm-do-grep) ; C-u 付で起動すると、recu]rsive となる
-(define-key helm-command-map (kbd "t")   'helm-gtags-find-tag)
+(global-set-key (kbd "C-; C-f") 'helm-for-files)
+(define-key helm-command-map (kbd "C-;")   'helm-resume)
+(define-key helm-command-map (kbd "y")     'helm-show-kill-ring)
+(define-key helm-command-map (kbd "o")     'helm-occur)
+(define-key helm-command-map (kbd "i")     'helm-imenu)
+(define-key helm-command-map (kbd "n e t") 'helm-net)
+(define-key helm-command-map (kbd "C-s")   'helm-occur-from-isearch)
+(define-key helm-command-map (kbd "t")     'helm-gtags-find-tag)
 
 
 ;; 自動補完を無効
@@ -64,5 +62,3 @@
   (let* ((current-prefix-arg (not non-recursive))
          (helm-current-prefix-arg non-recursive))
     (call-interactively 'helm-do-grep)))
-
-
