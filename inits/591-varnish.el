@@ -1,2 +1,2 @@
 ;; Varnish vcl-mode
-(when (require 'vcl-mode))
+(require 'vcl-mode)

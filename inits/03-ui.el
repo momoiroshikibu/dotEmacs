@@ -29,9 +29,9 @@
 
 ;; save cursor position
 ;; http://www.emacswiki.org/emacs/SavePlace
-(when (require 'saveplace)
-  (setq-default save-place t)
-  (setq save-place-file "~/.emacs.d/.cache/saved-places"))
+(require 'saveplace)
+(setq-default save-place t)
+(setq save-place-file "~/.emacs.d/.cache/saved-places")
 
 ;; cursor position
 (column-number-mode t)
@@ -66,22 +66,20 @@
 
 
 ;; Electric Pair
-(when (>= emacs-major-version 24)
-  (electric-pair-mode t))
+(electric-pair-mode t)
 
 
 ;; direx
 ;; popwin
-(when (require 'direx)
-  (require 'direx-project)
-  (setq direx:leaf-icon "  "
-        direx:open-icon "▾ "
-        direx:closed-icon "▸ ")
-  (when (require 'popwin)
-    (popwin-mode 1)
-    (push '(direx:direx-mode :position left :width 40 :dedicated t)
-          popwin:special-display-config)))
-
+(require 'direx)
+(require 'direx-project)
+(setq direx:leaf-icon "  "
+      direx:open-icon "▾ "
+      direx:closed-icon "▸ ")
+(require 'popwin)
+(popwin-mode 1)
+(push '(direx:direx-mode :position left :width 40 :dedicated t)
+      popwin:special-display-config)
 
 ;; Line Numbers
 ;; http://www.emacswiki.org/emacs/LineNumbers

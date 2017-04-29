@@ -6,8 +6,6 @@
 
 
 (global-set-key "\C-m" 'newline-and-indent)
-;; (define-key global-map (kbd "M-o") 'helm-c-moccur-occur-by-moccur) ;バッファ内検索
-;; (define-key global-map (kbd "C-M-o") 'helm-c-moccur-dmoccur) ;ディレクトリ
 (define-key global-map (kbd "s-o") 'helm-c-moccur-buffer-list)
 
 
@@ -17,15 +15,8 @@
 (setq ns-command-modifier (quote meta))
 (setq ns-alternate-modifier (quote super))
 
-;; Super key in Linux on the VirtualBox with Mac
-;; (setq x-super-keysym 'meta)
-;; (setq x-meta-keysym 'super)
-
-
 ;;; Backspace To C-H
 (global-set-key (kbd "C-h") 'delete-backward-char)
-
-
 
 ;;; Comment
 (global-set-key (kbd "C-/") 'comment-dwim)
@@ -71,13 +62,11 @@
 ;;; In Buffer File Completion
 (setq enable-recursive-minibuffers t)
 
-;;; Helm Find Files
+;; Helm Find Files
 (global-set-key (kbd "C-x C-f") 'helm-find-files)
-;;; Jump With nth commands
+
+;; Jump With nth commands
 (define-key helm-map (kbd "<C-tab>") 'helm-select-4th-action)
-
-
-
 
 ;; dired
 (define-key dired-mode-map (kbd "RET") 'dired-find-alternate-file)

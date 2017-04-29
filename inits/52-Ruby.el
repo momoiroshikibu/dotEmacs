@@ -16,10 +16,6 @@
 (require 'quickrun)
 (define-key ruby-mode-map (kbd "C-c C-r") 'quickrun)
 
-
-
-
-
 ;; indent
 (setq ruby-deep-indent-paren-style nil)
 (defadvice ruby-indent-line (after unindent-closing-paren activate)
@@ -42,13 +38,15 @@
 ;; # -*- coding: utf-8 -*-
 (setq ruby-insert-encoding-magic-comment nil)
 
-
+(setq ruby-use-encoding-map nil)
 
 (require 'inf-ruby)
 (setq inf-ruby-default-implementation "pry")
 
 ;; robe
 (require 'robe)
+(eval-after-load 'company '(push 'company-robe company-backends))
+
 
 (add-hook 'ruby-mode-hook '(lambda ()
                              (abbrev-mode 1)
