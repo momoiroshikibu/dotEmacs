@@ -133,3 +133,6 @@
 
 ;; Go
 (depends-on "go-mode")
+
+;; wakatime
+(depends-on "wakatime-mode")
