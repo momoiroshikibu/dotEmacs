@@ -53,6 +53,5 @@
                              (electric-pair-mode t)
                              (electric-indent-mode t)
                              (electric-layout-mode t)
-                             (flycheck-mode)
                              (robe-mode)
-                             (robe-start)))
+                             (flycheck-mode)))
