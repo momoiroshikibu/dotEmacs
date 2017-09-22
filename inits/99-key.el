@@ -47,8 +47,10 @@
 (global-set-key (kbd "C-x C-r") 'helm-for-files)
 (global-set-key (kbd "C-; k l") 'helm-show-kill-ring)
 (global-set-key (kbd "C-x b") 'helm-buffers-list)
-(global-set-key (kbd "C-; g") 'helm-git-grep)
+(global-set-key (kbd "C-; g g") 'helm-git-grep)
+(global-set-key (kbd "C-; g h q") 'helm-ghq)
 (global-set-key (kbd "C-; r") 'helm-quickrun)
+
 
 ;; ;; For find-file etc.
 ;; (define-key helm-read-file-map (kbd "TAB") 'helm-execute-persistent-action)

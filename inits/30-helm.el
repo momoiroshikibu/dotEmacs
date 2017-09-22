@@ -46,7 +46,6 @@
 
 
 (require 'helm-git-grep)
-(global-set-key (kbd "C-; g") 'helm-git-grep)
 (define-key isearch-mode-map (kbd "C-; g") 'helm-git-grep-from-isearch)
 (eval-after-load 'helm '(define-key helm-map (kbd "C-; g") 'helm-git-grep-from-helm))
 
