@@ -134,3 +134,6 @@
 
 ;; Go
 (depends-on "go-mode")
+
+;; Elixir
+(depends-on "elixir-mode")
