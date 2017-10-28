@@ -51,12 +51,8 @@
 (global-set-key (kbd "C-; g h q") 'helm-ghq)
 (global-set-key (kbd "C-; r") 'helm-quickrun)
 
-
-;; ;; For find-file etc.
-;; (define-key helm-read-file-map (kbd "TAB") 'helm-execute-persistent-action)
-;; ;; For helm-find-files etc.
-;; (define-key helm-find-files-map (kbd "TAB") 'helm-execute-persistent-action)
-
+;; use TAB to file name completion
+(define-key helm-find-files-map (kbd "TAB") 'helm-execute-persistent-action)
 
 
 (setq helm-input-idle-delay 0.02)
