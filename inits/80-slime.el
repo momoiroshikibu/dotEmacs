@@ -1,5 +1,5 @@
 (require 'slime)
-(load (expand-file-name "~/.roswell/lisp/quicklisp/slime-helper.el"))
+(load (expand-file-name "~/.roswell/helper.el"))
 (setq inferior-lisp-program "ros -L sbcl -Q run")
 (setq slime-contribs '(slime-fancy))
 
