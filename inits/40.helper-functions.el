@@ -18,3 +18,8 @@
 (defun browse-google()
   (interactive)
   (browse-url "https://google.com"))
+
+
+(defun copy-file-path-to-clipboard ()
+  (interactive)
+  (kill-new (buffer-file-name)))
