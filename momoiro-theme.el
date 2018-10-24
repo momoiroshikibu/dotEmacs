@@ -1,7 +1,7 @@
-(deftheme matsuura "The Theme of Matsuura")
+(deftheme momoiro "The Theme of momoiro")
 
 (custom-theme-set-faces
- 'matsuura
+ 'momoiro
  ;; 背景・文字・カーソル
  '(cursor ((t (:background "#F92672"))))
 
@@ -100,7 +100,4 @@
  '(company-scrollbar-fg ((t (:background "#a9a8a8"))))
  '(company-scrollbar-bg ((t (:background "#f2f1f1")))))
 
-
-(when load-file-name
-  (add-to-list 'custom-theme-load-path
-               (file-name-as-directory (file-name-directory load-file-name))))
+(provide-theme 'momoiro)

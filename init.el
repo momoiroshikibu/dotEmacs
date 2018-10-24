@@ -16,3 +16,9 @@
 (require 'init-loader)
 (setq init-loader-show-log-after-init nil)
 (init-loader-load)
+
+
+;; color-theme
+(add-to-list 'custom-theme-load-path "~/.emacs.d/momoiro-theme.el")
+(load-theme 'momoiro t)
+(enable-theme 'momoiro)
